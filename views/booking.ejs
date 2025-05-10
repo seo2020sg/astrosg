@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Astrology Consultation</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Book Your Consultation 🌟</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/booking" class="active">Book Consultation</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="booking-form">
+                <h2>Schedule Your Astrological Reading</h2>
+                <form action="/submit-booking" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="place">Place of Birth</label>
+                        <input type="text" id="place" name="place" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Time of Birth</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="appointmentDate">Preferred Consultation Date</label>
+                        <input type="datetime-local" id="appointmentDate" name="appointmentDate" required>
+                    </div>
+
+                    <button type="submit" class="btn">Book Consultation</button>
+                </form>
+            </section>
+
+            <section class="info-panel">
+                <div class="chart-preview">
+                    <h3>South Indian Astrology Chart</h3>
+                    <div class="chart-placeholder">
+                        <!-- Placeholder for chart image -->
+                        <p>Your personalized chart will be prepared during the consultation</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Divine Astrology Consultations. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
